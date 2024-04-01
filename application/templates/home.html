@@ -1,4 +1,49 @@
 {% extends "layout.html" %}
 {% block body_content %}
-  <p>Welcome to my inherited template</p>
+<div class="bg-2 text-center">
+    <a name="App"></a>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Hi {{name}}!</h3>
+            <h4> Welcome to Pick'N'Mix Movies </h4>
+            <p>Stuck on what to watch? We can help you pick a movie!</p>
+            <!-- LOGIN AND REGISTER BUTTONS -->
+            <a href="{{ url_for('login') }}">
+                <button type="button" class="btn btn-outline-success btn-md">Login</button>
+            </a>
+            <a href="{{ url_for('register') }}">
+                <button type="button" class="btn btn-outline-success btn-md">Register</button>
+            </a>
+            <button type="button" class="btn btn-dark">Find A Movie</button>
+        </div>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-3" >
+                    <img src="/static/images/boyandheron.jpg" alt="Image 3" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="/static/images/clonecalledtyrone.jpg" alt="Image 2" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="/static/images/pastlives.jpg" alt="Image 3" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="/static/images/poorthing.jpg" alt="Image 4" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="/static/images/thor.jpg" alt="Image 5" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="/static/images/taylorswift.jpg" alt="Image 6" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="/static/images/banalandadama.jpg" alt="Image 7" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <img src="/static/images/alien.jpg" alt="Image 8" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

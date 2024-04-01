@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body_content %}
+<ul>
+    <li>Minahil K </li>
+    <li> Leticia Santos</li>
+</ul>
+
+    <p> Hobbies </p>
+<ul>
+    {% for hobbies in favourites %}
+    <li> {{hobbies}} </li>
+    {% endfor %}
+</ul>
+{% endblock %}

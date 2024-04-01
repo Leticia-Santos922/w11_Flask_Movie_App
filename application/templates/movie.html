@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block body_content %}
+     <h1>Random Movie Picker</h1>
+    <form action="/movie" method="POST">
+        <button type="submit">Pick a Random Movie</button>
+    </form>
+    <div>
+        {% if movie %}
+            <h2>Randomly Selected Movie:</h2>
+            <p>Title: {{ movie.title }}</p>
+            <p>Genre: {{ movie.genre }}</p>
+            <p>Year: {{ movie.year }}</p>
+        {% endif %}
+    </div>
+{% endblock %}
