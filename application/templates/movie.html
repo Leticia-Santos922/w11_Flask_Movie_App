@@ -2,14 +2,24 @@
 {% block body_content %}
      <h1>Random Movie Picker</h1>
     <form action="/movie" method="POST">
+        <label for="genre">Select Genre:</label>
+        <select id="genre" name="genre">
+            <option value="">All Genres</option>
+            <option value="Drama">Drama</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Animation">Animation</option>
+            <!-- Add more genre options here --><
+        </select>
         <button type="submit">Pick a Random Movie</button>
     </form>
+
     <div>
         {% if movie %}
             <h2>Randomly Selected Movie:</h2>
-            <p>Title: {{ movie.title }}</p>
-            <p>Genre: {{ movie.genre }}</p>
-            <p>Year: {{ movie.year }}</p>
+            <p>Title: {{ movie[1] }}</p>
+            <p>Genre: {{ movie[2] }}</p>
+            <p>Year: {{ movie[3] }}</p>
+            <p>Year: {{ movie[4] }}</p>
         {% endif %}
     </div>
 {% endblock %}
