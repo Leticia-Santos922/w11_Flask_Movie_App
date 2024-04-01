@@ -13,13 +13,15 @@
         <button type="submit">Pick a Random Movie</button>
     </form>
 
-    <div>
+    <div class="movie-info">
         {% if movie %}
             <h2>Randomly Selected Movie:</h2>
             <p>Title: {{ movie[1] }}</p>
-            <p>Genre: {{ movie[2] }}</p>
-            <p>Year: {{ movie[3] }}</p>
+                <!-- TODO:Ask victoria why inline CSS?            -->
+            <img src="{{ url_for('static', filename=movie[2]) }}" alt="Movie Photo" id="move-img" style="max-width: 100%; height: 400px;">
+            <p>Genre: {{ movie[3] }}</p>
             <p>Year: {{ movie[4] }}</p>
+            <p>Year: {{ movie[5] }}</p>
         {% endif %}
     </div>
 {% endblock %}
