@@ -1,9 +1,24 @@
+/* body to make sure automatic to take away the lines */
 body {
-    background-color: black;
+    margin: 0; /* Remove default margin */
+    padding: 20px /* Remove default padding */
+    max-width: 100%; /* Set maximum width */
+    margin: 0 auto; /* Center content horizontally */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+.movie-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    body-color: #EFE9AE;
+}
+
+/* seperate button */
 button {
     margin: 10px;
+    font-size: 16px;
 }
 
 .post .container {
@@ -11,15 +26,24 @@ button {
 }
 
 .col-md-4 {
-background-color: black
+    background-color: #EEF0EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#movie-img {
-    max-width: 100%;
-    height: 100px;
+.col-md-8 {
+    background-color: #EFE9AE;
+
 }
 
-movie-info {
-    text-align: centre;
+
+
+#footer {
+    background-color: white;
+    height: 35px;
 }
+
+
 
