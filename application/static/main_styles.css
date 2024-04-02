@@ -7,6 +7,11 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+.container {
+    background-color: #FFFEDC;
+    max-width: 100%;
+}
+
 .movie-body {
     display: flex;
     flex-direction: column;
@@ -34,14 +39,14 @@ button {
 }
 
 .col-md-8 {
-    background-color: #EFE9AE;
+    background-color: white;
 
 }
 
 
 
 #footer {
-    background-color: white;
+    background-color: #FFFEDC;
     height: 35px;
 }
 

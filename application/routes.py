@@ -14,13 +14,14 @@ def about():
     return render_template('about.html')
 
 
+# decorator associates the function movies() with URL route and GET and POST requests
 @app.route('/movie', methods=['GET', 'POST'])
 def movie():
-    # pick a random movie
+    # checks if current request method is post, if it is it means the user has submitted a form to this route
     if request.method == 'POST':
-        # Check if the form contains the genre parameter
+        # retrieves the value of the genre parameter from the form submitted
         genre = request.form.get('genre')
-        # Pick a random movie
+        # calls the get_random_movie function to the genre obtained from the form
         movie = get_random_movie(genre)
         return render_template('movie.html', title='Movie', movie=movie)
     else:
