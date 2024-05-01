@@ -1,7 +1,7 @@
 /* body to make sure automatic to take away the lines */
 body {
     margin: 0; /* Remove default margin */
-    padding: 20px /* Remove default padding */
+    padding: 0; /* Remove default padding */
     max-width: 100%; /* Set maximum width */
     margin: 0 auto; /* Center content horizontally */
     overflow-x: hidden; /* Prevent horizontal scrolling */
@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    body-color: #EFE9AE;
+    background-color: #EFE9AE;
 }
 
 /* seperate button */
@@ -40,15 +40,21 @@ button {
 
 .col-md-8 {
     background-color: white;
-
 }
 
+.row {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
 
+.row img {
+    width: 100%;
+    object-fit: cover;
+    padding: 5px;
+}
 
 #footer {
     background-color: #FFFEDC;
     height: 35px;
 }
-
-
 

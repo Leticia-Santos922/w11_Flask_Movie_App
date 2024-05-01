@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block body_content %}
 <div class="movie-body">
-    <h1>Random Movie Picker</h1>
+    <h1 class="py-3">Random Movie Picker</h1>
     <form action="/movie" method="POST">
         <label for="genre">Select Genre:</label>
         <select id="genre" name="genre">
@@ -11,7 +11,7 @@
             <option value="Animation">Animation</option>
             <option value="Romance"> Romance</option>
         </select>
-        <div>
+        <div class="py-3">
             <button type="submit" class="btn btn-info">Pick a Random Movie</button>
         </div>
 
